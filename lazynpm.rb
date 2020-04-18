@@ -2,24 +2,24 @@
 class Lazynpm < Formula
   desc "A simple terminal UI for git commands, written in Go"
   homepage "https://github.com/jesseduffield/lazynpm/"
-  version "0.1.3"
+  version "0.1.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/jesseduffield/lazynpm/releases/download/v0.1.3/lazynpm_0.1.3_Darwin_x86_64.tar.gz"
-    sha256 "9898c5b94a2a0a88c01f24d4e8933e3c83d13baa335ec60f48f5215c126cddc2"
+    url "https://github.com/jesseduffield/lazynpm/releases/download/v0.1.4/lazynpm_0.1.4_Darwin_x86_64.tar.gz"
+    sha256 "59cfade7fe27da3941a8a8b82f4f4d17577accfe4e7af9d60570db0067bbbd2c"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/jesseduffield/lazynpm/releases/download/v0.1.3/lazynpm_0.1.3_Linux_x86_64.tar.gz"
-      sha256 "c608be05ae706dd676aeb0fc18c9192b3fa6df078d6603f9c274b20ad5a08e3a"
+      url "https://github.com/jesseduffield/lazynpm/releases/download/v0.1.4/lazynpm_0.1.4_Linux_x86_64.tar.gz"
+      sha256 "3d9322766fa9fbcfdd58279fcde769df848ab51accf78d650a2894f8fc227633"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jesseduffield/lazynpm/releases/download/v0.1.3/lazynpm_0.1.3_Linux_arm64.tar.gz"
-        sha256 "c1ab0281bfd20b9e4bad480552b5faf9dc3058f7a772747a40e63d15b776895a"
+        url "https://github.com/jesseduffield/lazynpm/releases/download/v0.1.4/lazynpm_0.1.4_Linux_arm64.tar.gz"
+        sha256 "4f4287f418dd7e12979ca8e0552235f1b7695b0a6ece30b3b75eaed083671d62"
       else
-        url "https://github.com/jesseduffield/lazynpm/releases/download/v0.1.3/lazynpm_0.1.3_Linux_armv6.tar.gz"
-        sha256 "6278ee8bf64ec91ac2e64b98ab1b23983fb0904e7a7f772d0b3f57aadc1fb67b"
+        url "https://github.com/jesseduffield/lazynpm/releases/download/v0.1.4/lazynpm_0.1.4_Linux_armv6.tar.gz"
+        sha256 "c46303405b34921349e436e94ccbb2417c0959d0ddba60daa0d1e7cd1ef595e3"
       end
     end
   end
