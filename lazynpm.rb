@@ -3,7 +3,6 @@ class Lazynpm < Formula
   desc "A simple terminal UI for git commands, written in Go"
   homepage "https://github.com/jesseduffield/lazynpm/"
   version "0.1.4"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/jesseduffield/lazynpm/releases/download/v0.1.4/lazynpm_0.1.4_Darwin_x86_64.tar.gz"
